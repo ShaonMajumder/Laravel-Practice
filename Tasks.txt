@@ -1,0 +1,16 @@
+Created Project Folder
+	composer create-project --prefer-dist laravel/laravel blog
+Setup Xampp Localhost directory
+	Change Document Root
+	Restart
+Creating VirtualHost
+Go to C:\xampp\apache\conf\extra\httpd-vhosts.conf
+Add the lines:
+<VirtualHost shaon.test:80>
+    DocumentRoot "E:\Shaon\blog\public"
+    <Directory "E:\Shaon\blog\public">
+        Options Indexes FollowSymLinks
+        AllowOverride all
+        Require all granted
+    </Directory>
+</VirtualHost>

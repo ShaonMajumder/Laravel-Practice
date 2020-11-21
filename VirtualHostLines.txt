@@ -1,0 +1,8 @@
+<VirtualHost shaon.test:80>
+    DocumentRoot "E:\Shaon\blog\public"
+    <Directory "E:\Shaon\blog\public">
+        Options Indexes FollowSymLinks
+        AllowOverride all
+        Require all granted
+    </Directory>
+</VirtualHost>
