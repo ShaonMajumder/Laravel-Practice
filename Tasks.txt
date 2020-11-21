@@ -18,3 +18,5 @@ Adding shaon.test to windows host file
 Editing Home file & adding home.blade.php to route
 Listing document files in laravel project
 	php artisan route:list
+Directives
+
