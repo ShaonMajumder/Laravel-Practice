@@ -1,2 +1,4 @@
 php intellisense
 php intelephense
+php DocBlocker
+php Namespace Resolver
