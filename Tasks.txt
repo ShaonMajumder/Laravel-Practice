@@ -1,3 +1,4 @@
+21-11-2020
 Created Project Folder
 	composer create-project --prefer-dist laravel/laravel blog
 Setup Xampp Localhost directory
@@ -20,3 +21,8 @@ Listing document files in laravel project
 	php artisan route:list
 Directives
 
+22-11-2020
+Checking the route first  - php artisan route:list
+If not add route method in routes>web.php
+
+Solving 404 issues & Managing Routes
