@@ -24,5 +24,8 @@ Directives
 22-11-2020
 Checking the route first  - php artisan route:list
 If not add route method in routes>web.php
+Solving bootstrap path issues by adding asset() method and keeping assets to public folder
 
+Work Update - 
 Solving 404 issues & Managing Routes
+
