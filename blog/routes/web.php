@@ -25,5 +25,14 @@ Route::get('/contact', function () {
 Route::view('/contact', 'contact');
 
 Route::get('/blog-post/{id}', function($id){
-    return $id;
+    $pages = [
+        1=> [
+            'title' => "hello from page 1",
+        ],
+        2=> [
+            'title' => "hello from page 2",
+        ]
+    ];
+    
+    return view('blog-post', ['data' => $pages[$id]]);
 });
