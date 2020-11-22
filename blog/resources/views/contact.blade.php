@@ -1,6 +1,5 @@
 @extends('layout')
 @section('content')
-
  
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -142,7 +141,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+          <p class="copyright text-muted">Copyright &copy; Shaon Majumder 2020</p>
         </div>
       </div>
     </div>

@@ -36,8 +36,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1>New Possiblities</h1>
+            <span class="subheading">Booting my blog with Laravel</span>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+          <p class="copyright text-muted">Copyright &copy; Shaon Majumder 2020</p>
         </div>
       </div>
     </div>

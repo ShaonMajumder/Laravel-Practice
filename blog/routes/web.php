@@ -21,3 +21,9 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::view('/contact', 'contact');
+
+Route::get('/blog-post/{id}', function($id){
+    return $id;
+});
