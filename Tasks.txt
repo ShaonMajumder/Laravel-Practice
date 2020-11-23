@@ -1,4 +1,5 @@
 21-11-2020
+https://getcomposer.org/download/
 Created Project Folder
 	composer create-project --prefer-dist laravel/laravel blog
 Setup Xampp Localhost directory
@@ -31,3 +32,8 @@ passing parameters
 Work Update - 
 Solving 404 issues & Managing Routes
 
+23/11/2020
+Set document Root
+Adding and adjusting VirtualHost to public folder
+Autoload Error > Needed to use 	composer create-project --prefer-dist laravel/laravel blog for creating project folder
+Creating Public files
