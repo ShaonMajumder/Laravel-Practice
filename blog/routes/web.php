@@ -27,10 +27,10 @@ Route::view('/contact', 'contact');
 Route::get('/blog-post/{id}', function($id){
     $pages = [
         1=> [
-            'title' => "hello from page 1",
+            'tid' => "hello from page 1",
         ],
         2=> [
-            'title' => "hello from page 2",
+            'tid' => "hello from page 2",
         ]
     ];
     

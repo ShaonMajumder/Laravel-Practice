@@ -1,4 +1,4 @@
 @extends('layout')
-@@section('content')
-    {{ $data }}
+@section('content')
+    {{ $data['tid'] }}
 @endsection
