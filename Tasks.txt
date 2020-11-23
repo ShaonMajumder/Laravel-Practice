@@ -27,7 +27,11 @@ If not add route method in routes>web.php
 Solving bootstrap path issues by adding asset() method and keeping assets to public folder
 route: get vs view method
 passing parameters
+Using routes
 
-Work Update - 
-Solving 404 issues & Managing Routes
+
+Work-update 23-11-2020
+Controller Basics
+php artisan make:controller HomeController
+Routing with controller
 

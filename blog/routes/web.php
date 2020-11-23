@@ -12,27 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+/*
+Get vs View
+route::view('/','home')
+route::get('/',function(){
     return view('home');
-});
+})
+Controller needs get method
+*/
+Route::get('/','HomeController@home')->name('home');
 
+Route::view('/contact2', 'HomeController@contact')->name('contact');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::view('/contact', 'contact');
-
-Route::get('/blog-post/{id}', function($id){
-    $pages = [
-        1=> [
-            'tid' => "hello from page 1",
-        ],
-        2=> [
-            'tid' => "hello from page 2",
-        ]
-    ];
-    
-    return view('blog-post', ['data' => $pages[$id]]);
-});
+Route::get('/blog-post/{id}/{welcome?}', 'HomeController@blog_post')->name('blog-post');
