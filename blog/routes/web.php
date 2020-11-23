@@ -22,6 +22,6 @@ Controller needs get method
 */
 Route::get('/','HomeController@home')->name('home');
 
-Route::view('/contact2', 'HomeController@contact')->name('contact');
+Route::get('/contact2', 'HomeController@contact')->name('contact');
 
 Route::get('/blog-post/{id}/{welcome?}', 'HomeController@blog_post')->name('blog-post');

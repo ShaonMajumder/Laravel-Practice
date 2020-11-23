@@ -34,4 +34,6 @@ Work-update 23-11-2020
 Controller Basics
 php artisan make:controller HomeController
 Routing with controller
+Database Configuration
+Managing Environment Variables (htacces/.env/appache vhost conf)
 
