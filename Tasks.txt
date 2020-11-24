@@ -110,6 +110,7 @@ Creating, updating and reading data and making simple database queries
 	to get the first model - App\BlogPost::where('title','random')->get()->first();
 
 	
+Resource controllers
 	
 	
 	
