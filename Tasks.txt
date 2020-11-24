@@ -73,13 +73,23 @@ Laravel Tinker and Eloquent models
 	exit to exit
 	restart tinker : php artisan tinker
 	$posts = App\BlogPost::all(); fetch all the records with model
+
 	It will work now.
 	To make verylongTrainmodel >> php artisan make:model VeryLongTrain -m      or         php artisan make:model VeryLongTrain --migration
 	Delete after it is following snake case or laravel naming convention
 	New migration for naming convetion change - php artisan make:migration change_blogposts_table_name --table=blogposts
 	add action  - Schema::rename('blogposts','blog_posts');
 	php artisan migrate
-
+Creating, updating and reading data and making simple database queries
+	php artisan tinker
+	showing all the data - $posts = App\BlogPost::all(); 
+	create the BlogPost object - $post = new App\BlogPost();
+	adding field title - $post -> title='New Title';
+	adding field content - $post -> content='New content';
+	show object - $post
+	save object - $post-save();
+	showing all the blogposts - $posts = App\BlogPost::all(); 
+	
 
 	
 Check the cheatseet for reference 
