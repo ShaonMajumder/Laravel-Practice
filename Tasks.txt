@@ -69,16 +69,19 @@ Laravel Tinker and Eloquent models
 	$posts = App\BlogPost::all(); fetch all the records with model
 	if error it might be can not find the database,
 	Go to model file BlogPost.php
-	Extend the model - protected $table = 'blogposts';
+	Extend the model - protected $table = 'blogposts'; // for exception of naming convention
 	exit to exit
 	restart tinker : php artisan tinker
 	$posts = App\BlogPost::all(); fetch all the records with model
-	It will work now.	
+	It will work now.
+	To make verylongTrainmodel >> php artisan make:model VeryLongTrain -m      or         php artisan make:model VeryLongTrain --migration
+	Delete after it is following snake case or laravel naming convention
+	New migration for naming convetion change - php artisan make:migration change_blogposts_table_name --table=blogposts
+	add action  - Schema::rename('blogposts','blog_posts');
+	php artisan migrate
+
 
 	
-
-
-
 Check the cheatseet for reference 
 
 
