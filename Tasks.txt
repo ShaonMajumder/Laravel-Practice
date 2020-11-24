@@ -30,10 +30,45 @@ passing parameters
 Using routes
 
 
-Work-update 23-11-2020
+23-11-2020
 Controller Basics
 php artisan make:controller HomeController
 Routing with controller
 Database Configuration
 Managing Environment Variables (htacces/.env/appache vhost conf)
+
+Work-update 24-11-2020
+Database Migrations
+	Look after DB PORT 3306
+	migrations classes : up, down
+	migrate command on terminal : php artisan migrate
+	Change database schema in all migrations file in laravel.  email to 191
+	Drop all the table: failed jobs, password resets, migrations, users
+	migrate command on terminal : php artisan migrate . The dropped databases are being recreated
+	migrations table holds all the migrations mentioned in migration table
+Creating own migration
+	Schema::method name - Arguments: table name, closure function(Blueprint object)
+	Make Migration:	php artisan make:migration name   . If name includes create_****_table create refers laravel to make a boilerplate to create a new table with the rest of the name. Random name will make random filename with empty methods.
+	Instead you can use: php artisan make:migration name_of_file --create=table_name
+	php artisan make:migration create_blogposts_table
+	php artisan migrate
+	schema fascade:
+	role back the change: php artisan migrate:rollback . Calling the down methods deleting and rolling back mysql database.
+	get rid of changes you have made: delete the unnecessary migrations file, in this case: blogposts table
+	To make changes to existing table mention the name of the table with underscore: php artisan make:migration add_content_to_blogposts_table   . Creating table method . If your name doesnt reflect an existing table name use --table suffix. php artisan make:migration add_content --table=blogposts
+	In table method, create $table->datatype(name);
+	dropColumn(name or array);
+	To undo: php artisan migrate:rollback
+	To migrate again: php artisan migrate
+Laravel Tinker and Eloquent models
+	Eloquent: laravel libray called Object Relation Mapping(ORM): php class corsponds to particular table->	fetch the data and store the data
+	To make a model: php artisan make:model name.
+	php artisan make:model BlogPost  . check at App folder
+	to run php file tool : php artisan tinker
+
+
+Check the cheatseet for reference 
+
+
+
 
