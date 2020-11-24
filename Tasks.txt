@@ -66,6 +66,15 @@ Laravel Tinker and Eloquent models
 	php artisan make:model BlogPost  . check at App folder
 	To run php file tool : php artisan tinker
 	if you have problem, look for php.ini or to get the location : php -i | grep 'php.ini'
+	$posts = App\BlogPost::all(); fetch all the records with model
+	if error it might be can not find the database,
+	Go to model file BlogPost.php
+	Extend the model - protected $table = 'blogposts';
+	exit to exit
+	restart tinker : php artisan tinker
+	$posts = App\BlogPost::all(); fetch all the records with model
+	It will work now.	
+
 	
 
 
