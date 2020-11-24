@@ -89,8 +89,29 @@ Creating, updating and reading data and making simple database queries
 	show object - $post
 	save object - $post-save();
 	showing all the blogposts - $posts = App\BlogPost::all(); 
-	
+	fetch the data and put inside it - $post2 = App\BlogPost::find(1);
+	show the object - $post2
+        $post2->title = 'modified title';
+	$post2->save();
+	$posts = App\BlogPost::all();
+	$post3 = new App\BlogPost();
+	$post3 -> title='random';
+	$post3 -> content='whatever';
+	$post3 -> save();
+	$posts = App\BlogPost:all();
+	$specificPosts = App\BlogPost::find([1,2]);
+	$posts[0]
+	$posts[1]
+	$posts[2]
+	printing all the title - foreach($posts as $post){ echo "{$post->title}\n"; }
+	$posts->first();
+	$posts->last();
+	simple query- App\BlogPost::where('title','random')->get();
+	to get the first model - App\BlogPost::where('title','random')->get()->first();
 
+	
+	
+	
 	
 Check the cheatseet for reference 
 
