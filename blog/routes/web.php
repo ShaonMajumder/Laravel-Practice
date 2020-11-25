@@ -24,4 +24,5 @@ Route::get('/','HomeController@home')->name('home');
 
 Route::get('/contact2', 'HomeController@contact')->name('contact');
 
-Route::get('/blog-post/{id}/{welcome?}', 'HomeController@blog_post')->name('blog-post');
+//Route::get('/blog-post/{id?}/{welcome?}', 'HomeController@blog_post')->name('blog-post');
+Route::get('/blog-post', 'HomeController@blog_post')->name('blog-post');
