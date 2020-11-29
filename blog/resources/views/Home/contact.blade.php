@@ -1,8 +1,7 @@
-@extends('layout')
+@extends('layouts.app')
 @section('content')
+ 
 
- 
- 
 
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/home-bg.jpg')">
@@ -11,19 +10,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-              {{-- {!! $wel !!}{{ $data['tid'] }} --}}  
-            
-            <h1><?php
-                $posts = App\BlogPost::all();
-    
-                /*foreach($posts as $post){
-                    echo "{$post->title}\n";
-                }*/
-                
-                echo $posts->first()['title'];
-    
-                ?></h1>
-            <span class="subheading"><?php echo $posts->first()['content']; ?></span>
+            <h1>New Possiblities</h1>
+            <span class="subheading">Booting my blog with Laravel</span>
           </div>
         </div>
       </div>
@@ -34,29 +22,20 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        
-        <?php
-            foreach($posts as $post){
-            ?>
-<div class="post-preview">
-    <a href="post.html">
-      <h2 class="post-title">
-        Man must explore, and this is exploration at its greatest
-      </h2>
-      <h3 class="post-subtitle">
-        Problems look mighty small from 150 miles up
-      </h3>
-    </a>
-    <p class="post-meta">Posted by
-      <a href="#">Start Bootstrap</a>
-      on September 24, 2019</p>
-  </div>
-  <hr>
-
-            <?php
-            }
-        ?>
-        
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Man must explore, and this is exploration at its greatest
+            </h2>
+            <h3 class="post-subtitle">
+              Problems look mighty small from 150 miles up
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on September 24, 2019</p>
+        </div>
+        <hr>
         <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">

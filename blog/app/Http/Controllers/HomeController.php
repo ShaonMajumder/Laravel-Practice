@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function home(){
-        return view('home');
+        return view('Home.home');
     }
     public function contact(){
-        return view('contact');
+        return view('Home.contact');
     }
     public function blog_post($id,$welcome=1){
         $pages = [
@@ -26,7 +26,7 @@ class HomeController extends Controller
             2=> "Welcome to "
         ];
         
-        return view('blog-post', ['data' => $pages[$id], 'wel' => $welcomes[$welcome] ]);
+        return view('Home.blog-post', ['data' => $pages[$id], 'wel' => $welcomes[$welcome] ]);
     }
 }
 

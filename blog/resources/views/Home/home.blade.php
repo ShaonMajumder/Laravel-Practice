@@ -1,8 +1,5 @@
-@extends('layout')
+@extends('layouts.app')
 @section('content')
-
- 
- 
 
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/home-bg.jpg')">

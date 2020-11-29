@@ -109,12 +109,50 @@ Creating, updating and reading data and making simple database queries
 	simple query- App\BlogPost::where('title','random')->get();
 	to get the first model - App\BlogPost::where('title','random')->get()->first();
 
-	
+	$posts = App\BlogPost:all();
+	$posts[0]->title="This is our first post.";
+	$posts[0]->save();
+
 Resource controllers
+	comments{{--  --}}	
 	
 	
-	
+26-11-2020
+Routes - 1. static 2. dynamic
+
+Understanding Routing in Laravel
+Routing function get /post /put /path /delete
+
 Check the cheatseet for reference 
+
+
+routing URI page-name/{id}
+
+Udemy
+Static method Route - parameters = URI, Controller(Anonynys Function/Name of method)
+
+php artisan serve
+- The serve command is just a shortcut for the PHP Built-in Webserver, something PHP has out of the box, so the point of using it is to start testing your application as fast as you could, you just need to install PHP, Composer and your application is up (if you don't need anything else, of course). But if you already have Nginx installed, there is no point at all, just use it.
+php artisan route:list
+- list the routes table
+
+Required parameters , optional parameters?
+
+Getting the first record from model
+BlogPost::find(1)
+BlogPost::find([1,2,3])
+findorfail() - throws exception if not found
+all() - all the records as collections
+collections act like array
+count() 
+
+query builder
+where,select,join
+
+Generate 5 model records - User::factory()->count(5)->create()
+User::where('id','>=',2)->orderBy('id','desc')->get();
+
+
 
 
 
