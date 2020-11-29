@@ -154,6 +154,7 @@ User::where('id','>=',2)->orderBy('id','desc')->get();
 
 
 
-
+Problems 
+Don't redirect to home page from links
 
 

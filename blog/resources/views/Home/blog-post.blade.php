@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+View Blog Posts
+@endsection
 @section('content')
 
  
